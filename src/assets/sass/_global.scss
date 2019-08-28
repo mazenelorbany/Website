@@ -12,6 +12,7 @@ body {
   --textLink: blue;
   --hr: hsla(0, 0%, 0%, 0.2);
   @include body-font;
+  padding-left: $sidebar-base-width;
 
   background-color: var(--bg);
 }
