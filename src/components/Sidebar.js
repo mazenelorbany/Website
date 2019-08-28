@@ -40,7 +40,7 @@ export class Sidebar extends Component {
       </button>
     </div> */}
         <a className="navbar-brand" href="#page-top">
-          //{' '}
+        
           <span className="d-block d-lg-none">
             {/* {config.firstName} {config.lastName} */}
           </span>
