@@ -5,14 +5,13 @@ import Layout from '../components/Layout';
 import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
+import Project from '../components/Projects';
+
 const IndexPage = () => (
   <Layout>
     <Sidebar />
-    <div className="container-fluid p-0">
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="about"
-      >
+    <div className="w-100">
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
         <div className="w-100">
           <h1 className="mb-0">
             {config.firstName}
@@ -23,10 +22,8 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I am experienced in leveraging agile frameworks to provide a robust
-            synopsis for high level overviews. Iterative approaches to corporate
-            strategy foster collaborative thinking to further the overall value
-            proposition.
+            I am a Software developer who's dedicated to develop web and mobile
+            Apps
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
@@ -52,69 +49,30 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">volunteer Full Stack developer</h3>
+              <div className="subheading mb-3">Salvation Army London-ON</div>
               <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
+                I volunteered to miagrate old HR database system from Microsoft
+                Access to React application with MYSQL database Click Here for
+                more information.
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
+              <span className="text-primary">March 2019 - present</span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
+              <h3 className="mb-0">Software Developer</h3>
+              <div className="subheading mb-3">Ebahn’s Solutions</div>
               <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
+                Developing and designing applications and solutions for smart
+                hotel systems.
               </p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-            <div className="resume-content">
-              <h3 className="mb-0">Junior Web Designer</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">July 2010 - December 2011</span>
-            </div>
-          </div>
-
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
-            <div className="resume-content">
-              <h3 className="mb-0">Web Design Intern</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
-            </div>
-            <div className="resume-date text-md-right">
-              <span className="text-primary">September 2008 - June 2010</span>
+              <span className="text-primary">March 2017 - June 2017</span>
             </div>
           </div>
         </div>
@@ -122,33 +80,31 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="education"
-      >
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
         <div className="w-100">
           <h2 className="mb-5">Education</h2>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">University of Colorado Boulder</h3>
+              <h3 className="mb-0">Multimedia University</h3>
               <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <div>Computer Engineering -</div>
+              <p>GPA: 3.07</p>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2006 - May 2010</span>
+              <span className="text-primary">October 2013 - December 2017</span>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0">James Buchanan High School</h3>
-              <div className="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 className="mb-0">Fanshawe College</h3>
+              <div className="subheading mb-3">
+                Graduate certificate (Network and security architecture)
+              </div>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2002 - May 2006</span>
+              <span className="text-primary">January 2019 - December 2019</span>
             </div>
           </div>
         </div>
@@ -156,10 +112,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="skills"
-      >
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
         <div className="w-100">
           <h2 className="mb-5">Skills</h2>
 
@@ -176,9 +129,7 @@ const IndexPage = () => (
             <li className="list-inline-item">
               <i className="fab fa-js-square"></i>
             </li>
-            <li className="list-inline-item">
-              <i className="fab fa-angular"></i>
-            </li>
+
             <li className="list-inline-item">
               <i className="fab fa-react"></i>
             </li>
@@ -189,17 +140,9 @@ const IndexPage = () => (
               <i className="fab fa-sass"></i>
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-less"></i>
+              <i className="fab fa-android"></i>
             </li>
-            <li className="list-inline-item">
-              <i className="fab fa-wordpress"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-gulp"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-grunt"></i>
-            </li>
+
             <li className="list-inline-item">
               <i className="fab fa-npm"></i>
             </li>
@@ -209,19 +152,34 @@ const IndexPage = () => (
           <ul className="fa-ul mb-0">
             <li>
               <i className="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design
+              Mobile Development
             </li>
             <li>
               <i className="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging
+              Full-Stack Web development
             </li>
             <li>
               <i className="fa-li fa fa-check"></i>
-              Cross Functional Teams
             </li>
             <li>
               <i className="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum
+              JavaScript
+            </li>
+            <li>
+              <i className="fa-li fa fa-check"></i>
+              NodeJS
+            </li>
+            <li>
+              <i className="fa-li fa fa-check"></i>
+              ReactJS &amp; React-Native
+            </li>
+            <li>
+              <i className="fa-li fa fa-check"></i>
+              Oracle &amp; MYSQL Database
+            </li>
+            <li>
+              <i className="fa-li fa fa-check"></i>
+              Android Development
             </li>
           </ul>
         </div>
@@ -229,10 +187,7 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
-      >
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
@@ -251,49 +206,15 @@ const IndexPage = () => (
       </section>
 
       <hr className="m-0" />
-
-      <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="awards"
-      >
+      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
         <div className="w-100">
-          <h2 className="mb-5">Awards &amp; Certifications</h2>
-          <ul className="fa-ul mb-0">
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2009
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008
-              (UI Design Category)
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2008
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005
-            </li>
-          </ul>
+          <h2 className="mb-5">Projects</h2>
+          <Project />
         </div>
       </section>
+      
     </div>
+    
   </Layout>
 );
 

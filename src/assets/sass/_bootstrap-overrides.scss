@@ -1,5 +1,14 @@
 .bg-primary {
-  background-color: $primary !important;
+  background-color: blue;
+}
+
+.backgrounddev {
+  background-image: url(../images/background3.jpg);
+  background-position: center;
+  background-size: cover;
+  width:"100%";
+  
+
 }
 
 .text-primary {
@@ -8,6 +17,7 @@
 
 a {
   color: $primary;
+
   &:hover,
   &:focus,
   &:active {

@@ -2,8 +2,10 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
+import DarkModeToggle from "./DarkModeToggle"
 
-import '../assets/sass/resume.scss';
+import '../assets/sass/styles.scss';
+
 
 class Layout extends Component {
   render() {
@@ -21,6 +23,7 @@ class Layout extends Component {
         `}
         render={data => (
           <>
+
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[

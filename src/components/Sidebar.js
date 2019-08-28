@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Scrollspy from 'react-scrollspy';
 import Scroll from './Scroll';
-
-import avatar from '../assets/images/avatar.png';
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode';
 import config from '../../config';
+import DarkModeToggle from './DarkModeToggle';
 
 export class Sidebar extends Component {
   constructor(props) {
@@ -15,7 +15,7 @@ export class Sidebar extends Component {
         { content: 'Education', href: 'education' },
         { content: 'Skills', href: 'skills' },
         { content: 'Interests', href: 'interests' },
-        { content: 'Awards', href: 'awards' },
+        { content: 'Projects', href: 'projects' },
       ],
     };
   }
@@ -24,19 +24,25 @@ export class Sidebar extends Component {
     const { tabs } = this.state;
     return (
       <nav
-        className="navbar navbar-expand-lg navbar-dark bg-primary fixed-top"
+        className="navbar navbar-expand-lg navbar-dark backgrounddev fixed-top"
         id="sideNav"
       >
+        <div style={{ position: 'absolute', left: '1px' }}>
+          <DarkModeToggle />
+        </div>
+        {/* <div className="dark-mode-toggle">
+      <button type="button" >
+        ☀
+      </button>
+      <Toggle />
+      <button type="button" >
+        ☾
+      </button>
+    </div> */}
         <a className="navbar-brand" href="#page-top">
+          //{' '}
           <span className="d-block d-lg-none">
-            {config.firstName} {config.lastName}
-          </span>
-          <span className="d-none d-lg-block">
-            <img
-              className="img-fluid img-profile rounded-circle mx-auto mb-2"
-              src={avatar}
-              alt=""
-            />
+            {/* {config.firstName} {config.lastName} */}
           </span>
         </a>
         <button

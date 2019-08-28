@@ -1,0 +1,944 @@
+@import url("https://fonts.googleapis.com/css?family=Fredoka+One&text={}>osamaqreh&display=swap");
+
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,500&display=swap");
+
+/*******************/
+/** Constants **/
+/*******************/
+:root {
+  --faded-text: #848484;
+  --notasfaded-text: #4b4b4b;
+}
+
+/*******************/
+/** Browser reset / Globals **/
+/*******************/
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%; /* 1rem will equal 10px*/
+}
+
+/* Setup font props and padding around page */
+body {
+  font-size: 1.6rem; /* 16px */
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: var(--text-color);
+  background-color: var(--main-color);
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 0px;
+  pointer-events: none;
+}
+
+a,
+input,
+button,
+iframe {
+  pointer-events: all;
+}
+
+a {
+  color: var(--accent-color-opposite);
+}
+
+img {
+  pointer-events: none;
+}
+
+/*******************/
+/** Header **/
+/*******************/
+.header {
+  width: 100%;
+  height: 55px;
+  background-color: var(--main-color);
+  z-index: 99;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+  pointer-events: all;
+}
+
+.headerFixed {
+  position: fixed;
+}
+
+.headerContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.themeSwitchContainer {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 80px;
+  pointer-events: all;
+}
+
+.headerLinksContainer {
+  right: 15px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.8rem;
+  display: flex;
+}
+
+.blogTextContainer {
+  margin-left: 5rem;
+  margin-right: 5rem;
+  pointer-events: all;
+}
+
+.headerText {
+  transition: opacity 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  opacity: 1;
+}
+
+.headerText:hover {
+  opacity: 0.8;
+}
+
+a.headerText {
+  text-decoration: none;
+  color: currentColor;
+}
+
+/*******************/
+/** Landing Section **/
+/*******************/
+.landingTopmostContainer {
+  background-color: var(--main-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.landingTopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15rem;
+  margin-bottom: 15rem;
+  margin-bottom: 0rem;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.landingTitleContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingTextContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: "Fredoka One", serif;
+  font-size: 9rem;
+}
+
+.landingText {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  flex-wrap: nowrap;
+  margin-right: 200px;
+}
+
+.cursor {
+  height: 100px;
+  width: 45px;
+  background-color: var(--accent-color);
+  margin-left: 0.5rem;
+  margin-top: 3rem;
+  animation: blinker 1s step-end infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.landingTaglineContainer {
+  margin-right: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.taglineTextTop {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+.taglineTextBot {
+  font-size: 2rem;
+  text-align: center;
+  pointer-events: all;
+}
+
+div.taglineTextBot > span {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/*******************/
+/** Top Separator Wave **/
+/*******************/
+.top-svg-container {
+  width: 100%;
+  margin-bottom: -7rem;
+}
+
+svg.wave-top {
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  fill: var(--alt-color);
+}
+
+/*******************/
+/** Work Section **/
+/*******************/
+.workTopmostContainer {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--alt-color);
+  margin-bottom: -15rem;
+}
+
+.workTopContainer {
+  display: flex;
+  flex: 1;
+  margin-bottom: 10rem;
+}
+
+.workTitleContainer {
+  font-weight: 600;
+  font-size: 4rem;
+  margin-top: 10rem;
+}
+
+.workTitleText {
+  position: relative;
+  border-bottom: 5px solid;
+  border-color: var(--accent-color);
+}
+
+/*******************/
+/** Work / Project **/
+/*******************/
+.projectContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 160px;
+}
+
+.projectPreview {
+  width: 20%;
+}
+
+.projectCard {
+  width: 40%;
+  transform: scale(1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  width: 80%;
+  margin-top: 10px;
+  margin-left: 40px;
+  font-size: 2rem;
+  font-weight: 500;
+  border-left: 3px solid;
+  padding-left: 15px;
+  border-color: var(--accent-color);
+}
+
+.cardRole {
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 40px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.cardDescription {
+  text-align: left;
+  font-size: 1.8rem;
+  margin: 40px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.cardTech {
+  font-size: 1.3333rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 10px;
+}
+
+.cardTechElement {
+  border: 1.5px solid var(--accent-color);
+  box-sizing: border-box;
+  border-radius: 3px;
+  margin-right: 10px;
+  padding: 5px;
+  font-size: 1.6rem;
+}
+
+.CardSources {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.5rem;
+  margin-top: 20px;
+  margin-left: 33px;
+  margin-bottom: 30px;
+  width: 90%;
+}
+
+.cardSource {
+  width: 100%;
+}
+.badgeLink {
+  width: 25%;
+}
+
+/*******************/
+/** Work / Bottom Separator Wave **/
+/*******************/
+.bot-svg-container {
+  width: 100%;
+  margin-top: -5rem;
+}
+
+svg.wave-bot {
+  transform: scale(-1);
+  width: 100%;
+  height: 100%;
+  margin-bottom: -25rem;
+  fill: var(--alt-color);
+}
+
+/*******************/
+/** Contact Page **/
+/*******************/
+.contactTopmostContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main-color);
+  align-items: center;
+  pointer-events: all;
+}
+
+.contactTopContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactTitleContainer {
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+.contactTitleText {
+  position: relative;
+  border-bottom: 5px solid;
+  border-color: var(--accent-color);
+}
+
+.contactTagline {
+  width: 100%;
+  padding-left: 15px;
+  margin-top: 60px;
+  margin-bottom: 10px;
+  border-left: 5px solid;
+  border-color: var(--accent-color);
+  line-height: 2.4rem;
+}
+
+.contactTitleContainer {
+  margin-top: 7rem;
+  font-size: 4rem;
+}
+
+.contactContainer {
+  width: 87%;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.contactFormContainer {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 350px;
+}
+
+.contactTextInput {
+  border-radius: 8px;
+  background-color: var(--form-color);
+  border: 3px solid transparent;
+  transition: border 0.15s;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: currentColor;
+}
+
+.contactTextInput:focus {
+  outline: none;
+  border: 3px solid var(--accent-color);
+}
+
+textarea.contactTextInput {
+  height: 150px;
+}
+
+.error {
+  color: red;
+  width: 100%;
+  margin-bottom: -10px;
+  margin-top: 10px;
+  line-height: 1.9rem;
+}
+
+.contactFormButton {
+  padding: 1rem;
+  margin-top: 50px;
+  background: var(--button-gradient);
+  filter: hue-rotate(10deg);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: var(--button-text-color);
+  border-radius: 10px;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  align-self: center;
+  width: 100%;
+  font-weight: 500;
+}
+
+.contactFormButtonMorphed.contactFormButtonMorphed {
+  background: var(--button-ok);
+  font-size: inherit;
+  pointer-events: none;
+  transition: all 0.2s;
+  animation: fadeInText 0.4s step-end;
+}
+
+@keyframes fadeInText {
+  0% {
+    font-size: 0;
+  }
+  40% {
+    font-size: inherit;
+  }
+}
+
+.contactFormButton:focus {
+  outline: none;
+}
+
+.contactFormButton:hover {
+  opacity: 0.8;
+  transform: translateY(-0.2rem);
+}
+
+.contactFormButton:active {
+  transform: translateY(0.2rem);
+  background: var(--button-gradient-active);
+}
+
+.contactLinks {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contactLinksContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactLinksContainer > a {
+  display: flex;
+  background-size: cover;
+  padding: 15px;
+  height: 32px;
+
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  transform: scale(1);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contactLinksContainer > a:hover {
+  opacity: 0.8;
+  transform: scale(1.2);
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.github {
+  background-image: url("../images/github-brands.svg");
+}
+
+.linkedIn {
+  background-image: url("../images/linkedin-brands.svg");
+}
+
+.insta {
+  background-image: url("../images/instagram-brands.svg");
+}
+
+.medium {
+  background-image: url("../images/medium-brands.svg");
+}
+
+.devto {
+  background-image: url("../images/dev-brands.svg");
+}
+
+/*******************/
+/** Blog **/
+/*******************/
+.accented {
+  color: var(--accent-color-opposite);
+}
+
+/* Syntax highlighting */
+.gatsby-highlight {
+  border-radius: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  pointer-events: all;
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  font-size: 13.6px;
+  margin-top: 30px;
+}
+
+pre[class*="language-"] {
+  border-radius: 20px;
+}
+
+.gatsby-highlight pre[class*="language-"] {
+  padding: 0 0 0 30px;
+}
+
+.formContainer.formContainer {
+  background: var(--alt-color);
+  box-shadow: var(--blog-form-shadow);
+  width: 95%;
+  height: 370px;
+  margin-left: 2.5%;
+  margin-top: -60px;
+  margin-bottom: -5px;
+  border-radius: 15px;
+}
+
+.contactBlogInput.contactBlogInput {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.blogFormButton.blogFormButton {
+  width: 50%;
+  margin-top: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.contactBlogTagline.contactBlogTagline {
+  width: 80%;
+  color: var(--text-color);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 35px;
+  border-left: 5px solid;
+  border-color: var(--accent-color);
+}
+
+/*******************/
+/** Footer **/
+/*******************/
+footer {
+  pointer-events: all;
+  height: 500px;
+  position: relative;
+  z-index: -1;
+
+  background-color: var(--main-color);
+}
+
+.footerText {
+  width: 100%;
+  font-size: 1.2rem;
+  bottom: 15px;
+  position: fixed;
+  font-weight: 600;
+  text-align: center;
+  color: var(--faded-text);
+}
+
+.footerText > div:first-child {
+  font-size: 2.5rem;
+  font-weight: 400;
+  font-family: "Fredoka One", serif;
+  margin-bottom: 30px;
+  pointer-events: none;
+}
+
+.footerText > span {
+  font-weight: 500;
+}
+
+.footerText.footerText > p {
+  font-weight: 400;
+  margin-bottom: 0rem;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+
+.footerText.footerText > p > a {
+  pointer-events: all;
+  text-decoration: none;
+  color: currentColor;
+  font-weight: 600;
+}
+
+.socialFooter {
+  position: relative;
+  margin-bottom: -50rem;
+}
+
+.claimerText {
+  color: inherit;
+}
+
+/*******************/
+/** Media Queries **/
+/*******************/
+@media only screen and (max-width: 1125px) {
+  .projectPreview {
+    width: 22%;
+  }
+
+  .projectCard {
+    width: 50%;
+    /* Overwrite JSX inline style */
+    margin-right: 0 !important;
+  }
+
+  .badgeLink {
+    width: 33%;
+  }
+
+  .cardHeader {
+    font-size: 1.8rem;
+  }
+
+  .cardDescription {
+    font-size: 1.6rem;
+  }
+  .cardRole {
+    font-size: 1.6rem;
+  }
+
+  .cardTechElement {
+    margin-top: 10px;
+  }
+
+  .landingText {
+    margin-right: 0;
+  }
+  .landingTaglineContainer {
+    margin-right: 0;
+  }
+  .bot-svg-container {
+    margin-bottom: 5rem;
+  }
+}
+
+@media only screen and (max-width: 858px) {
+  .landingTextContainer {
+    font-size: 8rem;
+  }
+  .taglineTextTop {
+    font-size: 2.5rem;
+  }
+  .taglineTextBot {
+    font-size: 2.22rem;
+  }
+  .projectContainer {
+    flex-direction: column;
+  }
+  .projectPreview {
+    margin-bottom: 3rem;
+    width: 37%;
+  }
+  .projectCard {
+    width: 65%;
+  }
+  #largeWidth {
+    /* Must overwrite inline style */
+    width: 65% !important;
+  }
+  .bot-svg-container {
+    margin-bottom: 10rem;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .landingTextContainer {
+    font-size: 6rem;
+  }
+  .projectPreview {
+    width: 46%;
+  }
+  .themeSwitchContainer {
+    left: 80px;
+  }
+  .CardSources {
+    margin-left: 35px;
+  }
+  .bot-svg-container {
+    margin-bottom: 15rem;
+  }
+
+  .badgeLink {
+    width: 35%;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .header {
+    position: absolute;
+  }
+  .headerLinksContainer {
+    position: relative;
+  }
+  .landingTopmostContainer {
+    margin-top: -6.5rem;
+  }
+  .landingTextContainer {
+    font-size: 5rem;
+  }
+  .taglineTextTop {
+    font-size: 2rem;
+  }
+  .taglineTextBot {
+    font-size: 1.8rem;
+  }
+  .headerLinksContainer {
+    margin-right: 0;
+    font-size: 1.6rem;
+    width: 80%;
+    justify-content: center;
+  }
+  .headerContainer {
+    pointer-events: all;
+
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+  .themeSwitchContainer {
+    position: relative;
+    margin-right: 120px;
+    margin-left: -30px;
+    flex: 0;
+    transform: scale(0.8);
+  }
+  .cursor {
+    transform: scale(0.7);
+    margin-left: 0rem;
+  }
+  .cardHeader {
+    font-size: 1.8rem;
+  }
+  .cardTechElement {
+    font-size: 1.4rem;
+  }
+  .CardSources {
+    flex-wrap: wrap;
+    width: 90%;
+  }
+  .projectPreview {
+    width: 53%;
+  }
+  .projectCard {
+    width: 85%;
+  }
+  #largeWidth {
+    /* Must overwrite inline style */
+    width: 70% !important;
+  }
+  .bot-svg-container {
+    margin-bottom: -5rem;
+  }
+  svg.wave-bot {
+    margin-bottom: -5rem;
+  }
+}
+
+@media only screen and (max-width: 434px) {
+  .badgeLink {
+    width: 40%;
+  }
+  .headerLinksContainer {
+    font-size: 1.3rem;
+  }
+  .landingText {
+    font-size: 4.5rem;
+  }
+  .themeSwitchContainer {
+    margin-left: -50px;
+  }
+  .taglineTextTop {
+    font-size: 2rem;
+  }
+  .taglineTextBot {
+    font-size: 1.8rem;
+  }
+  .projectCard {
+    width: 90%;
+  }
+  .cursor {
+    transform: scale(0.5);
+    margin: 0;
+    margin-top: 10px;
+    margin-left: -8px;
+  }
+  .cardHeader {
+    font-size: 1.75rem;
+  }
+  .cardTechElement {
+    font-size: 1.35rem;
+  }
+  #largeWidth {
+    /* Must overwrite inline style */
+    width: 76% !important;
+  }
+  .bot-svg-container {
+    margin-bottom: -10rem;
+  }
+  svg.wave-bot {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .landingText {
+    font-size: 3.5rem;
+  }
+  .taglineTextTop {
+    font-size: 1.8rem;
+  }
+  .taglineTextBot {
+    font-size: 1.6rem;
+  }
+  .contactTextContainer {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .badgeLink {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .landingTextContainer {
+    font-size: 3.5rem;
+  }
+  .projectCard {
+    height: 530px;
+  }
+  .projectCard {
+    height: 540px;
+  }
+  .headerLinksContainer {
+    font-size: 1.5rem;
+  }
+  .themeSwitchContainer {
+    margin-left: -70px;
+    transform: scale(0.7);
+  }
+  .bot-svg-container {
+    margin-bottom: -5rem;
+  }
+  svg.wave-bot {
+    margin-bottom: 0rem;
+  }
+  .badgeLink {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 299px) {
+  .landingText {
+    font-size: 3rem;
+  }
+  .themeSwitchContainer {
+    position: relative;
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (max-width: 230px) {
+  header {
+    display: none;
+  }
+}

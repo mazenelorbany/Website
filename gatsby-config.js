@@ -5,8 +5,10 @@ module.exports = {
   siteMetadata: {
     title: config.siteTitle,
   },
+
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -19,6 +21,7 @@ module.exports = {
         icon: config.manifestIcon, // This path is relative to the root of the site.
       },
     },
+
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
   ],
