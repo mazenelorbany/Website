@@ -1,0 +1,26 @@
+.bg-primary {
+  background-color: blue;
+}
+
+.backgrounddev {
+  background-image: url(../images/background3.jpg);
+  background-position: center;
+  background-size: cover;
+  width:"100%";
+  
+
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+a {
+  color: $primary;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($primary, 15%);
+  }
+}

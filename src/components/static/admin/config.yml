@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: osamaq/osamaq.com
+
+media_folder: static/img # Folder to save uploaded files
+public_folder: /img # Folder where uploaded files will be accessed
+
+collections:
+  - name: blog # Used in routes
+    label: Blog # Used in UI
+    folder: "src/components/Blog/posts" # Storage path
+    create: true # Allow creation by user
+    fields: # Document fields
+      - { name: title, label: Title }
+      - { name: date, label: Date, widget: date }
+      - { name: description, label: Description }
+      - { name: body, label: Body, widget: markdown }
