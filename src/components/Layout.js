@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import { StaticQuery, graphql } from 'gatsby';
 import DarkModeToggle from "./DarkModeToggle"
 
+ import '../assets/sass/resume.scss';
 
 
 class Layout extends Component {
