@@ -6,12 +6,14 @@ import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
 import config from '../../config';
 import Project from '../components/Projects';
-
 const IndexPage = () => (
   <Layout>
     <Sidebar />
     <div className="w-100">
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="about"
+      >
         <div className="w-100">
           <h1 className="mb-0">
             {config.firstName}
@@ -21,10 +23,7 @@ const IndexPage = () => (
             {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
-          <p className="lead mb-5">
-            I am a Software developer who's dedicated to develop web and mobile
-            Apps
-          </p>
+          <h3>software development is my passion 💻</h3>
           <div className="social-icons">
             {config.socialLinks.map(social => {
               const { icon, url } = social;
@@ -80,7 +79,10 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="education"
+      >
         <div className="w-100">
           <h2 className="mb-5">Education</h2>
 
@@ -112,7 +114,10 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="skills"
+      >
         <div className="w-100">
           <h2 className="mb-5">Skills</h2>
 
@@ -187,7 +192,10 @@ const IndexPage = () => (
 
       <hr className="m-0" />
 
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="interests"
+      >
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
@@ -206,15 +214,24 @@ const IndexPage = () => (
       </section>
 
       <hr className="m-0" />
-      <section className="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <section
+        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        id="projects"
+      >
         <div className="w-100">
           <h2 className="mb-5">Projects</h2>
           <Project />
         </div>
       </section>
-      
+      <div style={{ 'text-align': 'center' }}>
+        © 2019 Mazen Elorbany. All rights reserved. This site is built with
+        Gatsby and hosted on Netlify. The code is open-source on
+        <a href="https://github.com/anubhavsrivastava/gatsby-starter-resume">
+          Github
+        </a>
+        .
+      </div>
     </div>
-    
   </Layout>
 );
 

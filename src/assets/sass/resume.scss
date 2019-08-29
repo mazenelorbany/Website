@@ -9,12 +9,7 @@
 @import './fontawesome/css/all.min.css';
 @import url('https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700');
 @import url('https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i');
-h6 {
-  @include heading-font;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: $gray-800;
-}
+
 
 html,
 
@@ -143,3 +138,4 @@ input[type='checkbox'].dmcheck {
     background-color: #f6f6f6;
   }
 }
+
