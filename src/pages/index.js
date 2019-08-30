@@ -219,7 +219,7 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Projects</h2>
-          <Project />
+          {/* <Project /> */}
         </div>
       </section>
       <div style={{ 'text-align': 'center' }}>
