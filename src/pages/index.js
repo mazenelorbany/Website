@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-// import img from '../assets/images/oraclecert1.jpg';
+import img from '../assets/images/oraclecert1.jpg';
 
 import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
