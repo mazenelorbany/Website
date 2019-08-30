@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import img from '../assets/images/oraclecert.jpg';
+import img from '../assets/images/oraclecert1.jpg';
 
 import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
@@ -219,7 +219,7 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Projects</h2>
-          {/* <Project /> */}
+          <Project />
         </div>
       </section>
       <div style={{ 'text-align': 'center' }}>
