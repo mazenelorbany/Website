@@ -24,6 +24,15 @@ body.dark {
   --textTitle: white;
   --textLink: yellow;
   --hr: hsla(0, 0%, 100%, 0.2);
+  font-family: georgia, serif;
+  font-weight: normal;
+  word-wrap: initial;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+
 }
 
 body.light-mode {
@@ -139,3 +148,19 @@ input[type='checkbox'].dmcheck {
   }
 }
 
+.wrapper {
+  display: grid;
+  grid-template-columns: 500px 500px ;
+  grid-gap: 80px;
+  background-color: #fff;
+}
+
+.box {
+  max-width: 450;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+ background-color: #444;
+
+}

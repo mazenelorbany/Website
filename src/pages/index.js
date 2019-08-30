@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
+import img from '../assets/images/oracle_cert.jpg';
 
 import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
@@ -52,8 +53,9 @@ const IndexPage = () => (
               <div className="subheading mb-3">Salvation Army London-ON</div>
               <p>
                 I volunteered to miagrate old HR database system from Microsoft
-                Access to React application with MYSQL database Click Here for
-                more information.
+                Access to React application with MYSQL database Click{' '}
+                <a href="https://github.com/mazenelorbany/COH">Here</a> for more
+                information.
               </p>
             </div>
             <div className="resume-date text-md-right">
@@ -65,10 +67,18 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Software Developer</h3>
               <div className="subheading mb-3">Ebahn’s Solutions</div>
-              <p>
-                Developing and designing applications and solutions for smart
-                hotel systems.
-              </p>
+              <li>
+                Designed an android application for hotel staff’s use{' '}
+                <a href="https://play.google.com/store/apps/details?id=com.mazen.bitsapp">
+                  Bits Staff.
+                </a>
+              </li>
+              <li>
+                Designed an android application for hotel Guest’s use{' '}
+                <a href="https://play.google.com/store/apps/details?id=com.mazen.bitsapp">
+                  Bits Guest.
+                </a>
+              </li>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">March 2017 - June 2017</span>
@@ -90,8 +100,8 @@ const IndexPage = () => (
             <div className="resume-content">
               <h3 className="mb-0">Multimedia University</h3>
               <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Engineering -</div>
-              <p>GPA: 3.07</p>
+              <div>Computer Engineering -GPA: 3.07</div>
+              <p></p>
             </div>
             <div className="resume-date text-md-right">
               <span className="text-primary">October 2013 - December 2017</span>
@@ -194,28 +204,22 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="interests"
+        id="Certificates"
       >
         <div className="w-100">
-          <h2 className="mb-5">Interests</h2>
-          <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. In the winter, I am an avid skier and novice ice climber.
-            During the warmer months here in Colorado, I enjoy mountain biking,
-            free climbing, and kayaking.
-          </p>
-          <p className="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
-          </p>
+          <h2 className="mb-5">Certificates</h2>
+          <img
+              className="w-100"
+                src={img}
+               
+                style={{ marginBottom: '2em' }}
+              />
         </div>
       </section>
 
       <hr className="m-0" />
       <section
-        className="resume-section p-3 p-lg-5 d-flex align-items-center"
+        className="resume-section p-3 p-lg-5 d-flex align-items-center w-100"
         id="projects"
       >
         <div className="w-100">
