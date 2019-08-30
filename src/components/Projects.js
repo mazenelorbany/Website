@@ -48,7 +48,7 @@ const DEFAULT_IMAGES = [
     caption: 'Bits Staff',
     description:
       'Bits Staff application for integration with Bits interactive TV. This application is designed to offer staffs a unique way to carryout their daily routine.',
-    tech: 'Tech: MongoDB, Express.Js, React.Js, Redux.Js, Node.Js',
+    tech: 'Tech: Android',
     link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsapp',
   },
   {
@@ -56,27 +56,19 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb07,
     caption: 'Bits Guest',
     description:
-      'Bits Staff application for integration with Bits interactive TV. This application is designed to offer staffs a unique way to carryout their daily routine.',
-    tech: 'Tech: MongoDB, Express.Js, React.Js, Redux.Js, Node.Js',
-    link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsapp',
+      'Bits Guest application for integration with Bits interactive TV. This application is designed to offer guests a pleasant experience during their stay in the hotel.',
+    tech: 'Tech: Android',
+    link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsguest',
   },
-  {
-    id: 'thumb14',
-    thumbnail: thumb07,
-    caption: 'Bits Guest',
-    description:
-      'Bits Staff application for integration with Bits interactive TV. This application is designed to offer staffs a unique way to carryout their daily routine.',
-    tech: 'Tech: MongoDB, Express.Js, React.Js, Redux.Js, Node.Js',
-    link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsapp',
-  },
+ 
   {
     id: 'thumb15',
     thumbnail: thumb08,
     caption: 'FYP Project',
     description:
-      'Bits Staff application for integration with Bits interactive TV. This application is designed to offer staffs a unique way to carryout their daily routine.',
-    tech: 'Tech: MongoDB, Express.Js, React.Js, Redux.Js, Node.Js',
-    link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsapp',
+      'Design and develop a motorized cloth dryer rack system for residential usage.\n Design and develop a weather-based sensor module, integrated with the motorizedsystem, design and develop a usernotification system.',
+    tech: 'Tech: Android',
+    link: '',
   },
   {
     id: 'thumb1',
