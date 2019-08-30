@@ -1,11 +1,11 @@
 import React, { PureComponent } from 'react';
-import NoLightGallery from './NoLightGallery';
+import NoLightGallery from '../components/NoLightGallery';
 
 // import thumb01 from '../assets/images/website1.jpg';
 // import thumb01b from '../assets/images/devconnect1.jpg';
-import thumb02 from '../assets/images/todoapp1.png';
-import thumb03 from '../assets/images/loginreg.png';
-import thumb04 from '../assets/images/COH.jpg';
+import thumb02 from '../assets/img/todoapp.png';
+import thumb03 from '../assets/img/loginreg.png';
+import thumb04 from '../assets/img/COH.jpg';
 // import thumb06 from '../assets/images/bitstaff2.jpg';
 // import thumb07 from '../assets/images/bitsguest.jpg';
 // import thumb08 from '../assets/images/hangerApp.jpg';
