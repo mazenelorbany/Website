@@ -5,7 +5,7 @@ import NoLightGallery from '../components/NoLightGallery';
 // import thumb01b from '../assets/images/devconnect1.jpg';
 import thumb02 from '../assets/img/todoapp.png';
 import thumb03 from '../assets/img/loginreg.png';
-import thumb04 from '../assets/img/COH.jpg';
+import thumb04 from '../assets/img/COH.png';
 // import thumb06 from '../assets/images/bitstaff2.jpg';
 // import thumb07 from '../assets/images/bitsguest.jpg';
 // import thumb08 from '../assets/images/hangerApp.jpg';
