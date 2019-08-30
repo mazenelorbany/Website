@@ -5,7 +5,7 @@ import NoLightGallery from './NoLightGallery';
 // import thumb01b from '../assets/images/devconnect1.jpg';
 import thumb02 from '../assets/images/todoapp1.png';
 import thumb03 from '../assets/images/loginreg.png';
-// import thumb04 from '../assets/images/COH.jpg';
+import thumb04 from '../assets/images/COH.jpg';
 // import thumb06 from '../assets/images/bitstaff2.jpg';
 // import thumb07 from '../assets/images/bitsguest.jpg';
 // import thumb08 from '../assets/images/hangerApp.jpg';
@@ -22,15 +22,15 @@ const DEFAULT_IMAGES = [
   //   tech: 'Tech: GatsbyJS, React.Js',
   //   link: '',
   // },
-  // {
-  //   id: 'thumb11',
-  //   thumbnail: thumb04,
-  //   caption: 'HRM application',
-  //   description:
-  //     'Volunteer projects : HRM application developed using ReactJs,NodeJS and MYSQL, This application was based on another HRM application using MS Access. The database was migrated to MYSQL and a Front-end using ReactJS was designed to match the old application, but with better performance, functionality and user-interface ',
-  //   tech: 'Tech: GatsbyJS, React.Js',
-  //   link: '',
-  // },
+  {
+    id: 'thumb11',
+    thumbnail: thumb04,
+    caption: 'HRM application',
+    description:
+      'Volunteer projects : HRM application developed using ReactJs,NodeJS and MYSQL, This application was based on another HRM application using MS Access. The database was migrated to MYSQL and a Front-end using ReactJS was designed to match the old application, but with better performance, functionality and user-interface ',
+    tech: 'Tech: GatsbyJS, React.Js',
+    link: '',
+  },
   // {
   //   id: 'thumb12',
   //   thumbnail: thumb01b,
