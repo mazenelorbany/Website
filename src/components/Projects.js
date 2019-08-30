@@ -5,9 +5,9 @@ import NoLightGallery from '../components/NoLightGallery';
 // import thumb01b from '../assets/images/devconnect1.jpg';
 import thumb02 from '../assets/img/todoapp.png';
 import thumb03 from '../assets/img/loginreg.png';
-import thumb04 from '../assets/img/COH.png';
+// import thumb04 from '../assets/img/COH.jpg';
 // import thumb06 from '../assets/images/bitstaff2.jpg';
-// import thumb07 from '../assets/images/bitsguest.jpg';
+ import thumb07 from '../assets/img/bitsguest.png';
 // import thumb08 from '../assets/images/hangerApp.jpg';
 
 
@@ -22,15 +22,15 @@ const DEFAULT_IMAGES = [
   //   tech: 'Tech: GatsbyJS, React.Js',
   //   link: '',
   // },
-  {
-    id: 'thumb11',
-    thumbnail: thumb04,
-    caption: 'HRM application',
-    description:
-      'Volunteer projects : HRM application developed using ReactJs,NodeJS and MYSQL, This application was based on another HRM application using MS Access. The database was migrated to MYSQL and a Front-end using ReactJS was designed to match the old application, but with better performance, functionality and user-interface ',
-    tech: 'Tech: GatsbyJS, React.Js',
-    link: '',
-  },
+  // {
+  //   id: 'thumb11',
+  //   thumbnail: thumb04,
+  //   caption: 'HRM application',
+  //   description:
+  //     'Volunteer projects : HRM application developed using ReactJs,NodeJS and MYSQL, This application was based on another HRM application using MS Access. The database was migrated to MYSQL and a Front-end using ReactJS was designed to match the old application, but with better performance, functionality and user-interface ',
+  //   tech: 'Tech: GatsbyJS, React.Js',
+  //   link: '',
+  // },
   // {
   //   id: 'thumb12',
   //   thumbnail: thumb01b,
@@ -50,15 +50,15 @@ const DEFAULT_IMAGES = [
   //   tech: 'Tech: Android',
   //   link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsapp',
   // },
-  // {
-  //   id: 'thumb14',
-  //   thumbnail: thumb07,
-  //   caption: 'Bits Guest',
-  //   description:
-  //     'Bits Guest application for integration with Bits interactive TV. This application is designed to offer guests a pleasant experience during their stay in the hotel.',
-  //   tech: 'Tech: Android',
-  //   link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsguest',
-  // },
+  {
+    id: 'thumb14',
+    thumbnail: thumb07,
+    caption: 'Bits Guest',
+    description:
+      'Bits Guest application for integration with Bits interactive TV. This application is designed to offer guests a pleasant experience during their stay in the hotel.',
+    tech: 'Tech: Android',
+    link: 'https://play.google.com/store/apps/details?id=com.mazen.bitsguest',
+  },
  
   // {
   //   id: 'thumb15',
