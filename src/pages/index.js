@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Layout from '../components/Layout';
-import img from '../assets/images/oraclecert1.jpg';
+// import img from '../assets/images/oraclecert1.jpg';
 
 import { Link } from 'gatsby';
 import Sidebar from '../components/Sidebar';
@@ -208,7 +208,7 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Certificates</h2>
-          <img className="w-100" src={img} style={{ marginBottom: '2em' }} />
+          {/* <img className="w-100" src={img} style={{ marginBottom: '2em' }} /> */}
         </div>
       </section>
 
