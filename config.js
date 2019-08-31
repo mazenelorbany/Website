@@ -1,12 +1,12 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter Resume', // <title>
+  siteTitle: 'Mazen Elorbany', // <title>
   manifestName: 'Resume',
   manifestShortName: 'Landing', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
-  manifestIcon: 'src/assets/img/website-icon.png',
+  manifestIcon: 'src/assets/img/websiteicon.png',
   pathPrefix: `/gatsby-starter-resume/`, // This path is subpath of your hosting https://domain/portfolio
   firstName: 'Mazen',
   lastName: 'Elorbany',
@@ -28,9 +28,9 @@ module.exports = {
       url: 'https://wa.me/15198605826',
     },
     {
-      icon: 'fa-facebook-f',
+      icon: 'fas fa-file-pdf',
       name: 'Facebook',
-      url: 'https://facebook.com/theanubhav',
+      url: 'https://drive.google.com/file/d/1s2pI8ocRJ3PNcV4eqGbWrHxEgnBDbZ3a/view?usp=sharing',
     },
   ],
   email: 'mazen.elorbany2013@gmail.com',

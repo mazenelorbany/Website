@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-resume",
+  "name": "Software Developer",
   "version": "0.0.1",
   "description": "Gatsby.js V2 starter template based on Resume by startbootstrap",
   "repository": {
@@ -7,8 +7,8 @@
     "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-resume.git"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Mazen Elorbany",
+    "email": "mazen.elorbany2013@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",
@@ -54,8 +54,7 @@
     "url": "https://github.com/anubhavsrivastava/gatsby-starter-resume/issues"
   },
   "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-resume#readme",
-  "buildpacks": [
-    {
+  "buildpacks": [{
       "url": "heroku/nodejs"
     },
     {

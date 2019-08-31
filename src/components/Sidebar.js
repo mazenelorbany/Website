@@ -30,22 +30,13 @@ export class Sidebar extends Component {
         <div style={{ position: 'absolute', left: '1px' }}>
           <DarkModeToggle />
         </div>
-        {/* <div className="dark-mode-toggle">
-      <button type="button" >
-        ☀
-      </button>
-      <Toggle />
-      <button type="button" >
-        ☾
-      </button>
-    </div> */}
+        
         <a className="navbar-brand" href="#page-top">
-          
           <span className="d-block d-lg-none">
             {/* {config.firstName} {config.lastName} */}
           </span>
         </a>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-toggle="collapse"
@@ -55,7 +46,7 @@ export class Sidebar extends Component {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <Scrollspy
             items={tabs.map(s => s.href)}

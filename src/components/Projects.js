@@ -65,7 +65,7 @@ const DEFAULT_IMAGES = [
     thumbnail: thumb08,
     caption: 'FYP Project',
     description:
-      'Design and develop a motorized cloth dryer rack system for residential usage.\n Design and develop a weather-based sensor module, integrated with the motorizedsystem, design and develop a usernotification system.',
+      'Design and develop a motorized cloth dryer rack system for residential usage.\n Design and develop a weather-based sensor module, integrated with the motorized system, design and develop a user notification system.',
     tech: 'Tech: Android',
     link: '',
   },

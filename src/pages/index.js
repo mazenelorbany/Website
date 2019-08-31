@@ -224,7 +224,7 @@ const IndexPage = () => (
       </section>
       <div style={{ 'text-align': 'center' }}>
         © 2019 Mazen Elorbany. All rights reserved. This site is built with
-        Gatsby and hosted on Netlify. The code is open-source on
+        Gatsby and hosted on Netlify. The code is open-source on {" "}
         <a href="https://github.com/anubhavsrivastava/gatsby-starter-resume">
           Github
         </a>
