@@ -28,8 +28,8 @@ const DEFAULT_IMAGES = [
     caption: 'HRM application',
     description:
       'Volunteer projects : HRM application developed using ReactJs,NodeJS and MYSQL, This application was based on another HRM application using MS Access. The database was migrated to MYSQL and a Front-end using ReactJS was designed to match the old application, but with better performance, functionality and user-interface ',
-    tech: 'Tech: GatsbyJS, React.Js',
-    link: '',
+    tech: 'Tech:  ReactJS, ExpressJS, NodeJS, MYSQL, Sequalize, Material-UI, MUI-datatables, Passport.JS',
+    link: 'https://github.com/mazenelorbany/HRM/blob/master/README.md',
   },
   {
     id: 'thumb12',
