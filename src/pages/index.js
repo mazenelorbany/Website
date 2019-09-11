@@ -54,7 +54,7 @@ const IndexPage = () => (
               <p>
                 I volunteered to miagrate old HR database system from Microsoft
                 Access to React application with MYSQL database Click{' '}
-                <a href="https://github.com/mazenelorbany/COH">Here</a> for more
+                <a href="https://github.com/mazenelorbany/HRM">Here</a> for more
                 information.
               </p>
             </div>
@@ -99,7 +99,7 @@ const IndexPage = () => (
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Multimedia University</h3>
-              <div className="subheading mb-3">Bachelor of Science</div>
+              <div className="subheading mb-3">B.Eng</div>
               <div>Computer Engineering -GPA: 3.07</div>
               <p></p>
             </div>
@@ -161,6 +161,12 @@ const IndexPage = () => (
             <li className="list-inline-item">
               <i className="fab fa-npm"></i>
             </li>
+            <li className="list-inline-item">
+              <i className="fab fa-php"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-database"></i>
+            </li>
           </ul>
 
           <div className="subheading mb-3">Workflow</div>
@@ -196,6 +202,11 @@ const IndexPage = () => (
               <i className="fa-li fa fa-check"></i>
               Android Development
             </li>
+            <li>
+              <i className="fa-li fa fa-check"></i>
+              PHP &amp; Laravel
+            </li>
+            
           </ul>
         </div>
       </section>
