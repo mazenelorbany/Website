@@ -165,7 +165,7 @@ const IndexPage = () => (
               <i className="fab fa-php"></i>
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-database"></i>
+              <i className="fad fa-database"></i>
             </li>
           </ul>
 
@@ -206,7 +206,6 @@ const IndexPage = () => (
               <i className="fa-li fa fa-check"></i>
               PHP &amp; Laravel
             </li>
-            
           </ul>
         </div>
       </section>
@@ -235,7 +234,7 @@ const IndexPage = () => (
       </section>
       <div style={{ 'text-align': 'center' }}>
         © 2019 Mazen Elorbany. All rights reserved. This site is built with
-        Gatsby and hosted on Netlify. The code is open-source on {" "}
+        Gatsby and hosted on Netlify. The code is open-source on{' '}
         <a href="https://github.com/anubhavsrivastava/gatsby-starter-resume">
           Github
         </a>
