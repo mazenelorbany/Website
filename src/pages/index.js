@@ -164,9 +164,7 @@ const IndexPage = () => (
             <li className="list-inline-item">
               <i className="fab fa-php"></i>
             </li>
-            <li className="list-inline-item">
-              <i className="fad fa-database"></i>
-            </li>
+           
           </ul>
 
           <div className="subheading mb-3">Workflow</div>
